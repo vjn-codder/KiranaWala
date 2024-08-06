@@ -1,105 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KiranaWala | Home</title>
-	<style type="text/css">
-		body
-		{
-			/*background-image: url("kirana_backgroud.jpg");
-			background-repeat: no-repeat;*/
-			background-color: floralwhite;
-			font-size: 17px;
-		}
-		a
-		{
-			color: black;
-			text-decoration: none;
-		}
-		h1
-		{
-			color: rosybrown;
-			text-decoration: underline;
-		}
-		dt
-		{
-			text-decoration: underline;
-		}
-		form
-		{
-			margin-top: -20px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Kiranawala, your go-to grocery store.">
+    <meta name="keywords" content="grocery, contact, Kiranawala, store">
+    <title>KiranaWala | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: floralwhite;
+            color: #333;
+        }
 
-	<link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
 
+        header img {
+            height: 50px;
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+
+        nav {
+            background: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .content h1 {
+            color: rosybrown;
+            text-decoration: underline;
+        }
+
+        .content dl {
+            margin: 0;
+        }
+
+        .content dt {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .content ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .content ul li {
+            margin: 5px 0;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <img src="grocery-logo2.jpg" alt="Kiranawala Logo">
+        <a href="index.html">Kiranawala.com</a>
+    </header>
 
-<body style="color:black;">
-	<img src="grocery-logo2.jpg" style="height:50px;width:50px">
-	<b><a href="index.html"> Kiranawala.com</a></b>
-	<hr>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="today'spricelist.html">Today's Price List</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a>
+    </nav>
 
-	<a href="#">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a>| <a href="today'spricelist.html">Today's price list</a> | <a href="register.html">Register</a> | <a href="login.html">login</a>
-	<hr>
+    <section class="content">
+        <h1>Grocery Items</h1>
+        <form action="about.html">
+            <dl>
+                <dt>1. Atta</dt>
+                <dd>
+                    <ul>
+                        <li>Aashirwad chakki</li>
+                        <li>Majisa brand</li>
+                        <li>Fortune Chakki Fresh Atta</li>
+                        <li>Shakti Bhog Atta</li>
+                    </ul>
+                </dd>
+                <dt>2. Daal</dt>
+                <dd>
+                    <ul>
+                        <li>Moong daal</li>
+                        <li>Urad daal</li>
+                        <li>Masoor daal</li>
+                        <li>Channa daal</li>            
+                    </ul>
+                </dd>
+                <dt>3. Ghee</dt>
+                <dd>
+                    <ul>
+                        <li>Saras ghee</li>
+                        <li>Dalda ghee</li>
+                        <li>Gowardhan ghee</li>
+                        <li>Amul ghee</li>
+                    </ul>
+                </dd>
+                <dt>4. Ice Cream</dt>
+                <dd>
+                    <ul>
+                        <li>Amul</li>
+                        <li>Kwality Wall's</li>
+                        <li>Kesar</li>
+                        <li>Choko Bar</li>
+                    </ul>
+                </dd>
+                <dt>5. Soap</dt>
+                <dd>
+                    <ul>
+                        <li>Lux soap</li>
+                        <li>Lifebuoy</li>
+                        <li>Hamaam</li>
+                        <li>Neem soap</li>
+                    </ul>
+                </dd>
+                <dt>6. Washing Powder</dt>
+                <dd>
+                    <ul>
+                        <li>Nirma</li>
+                        <li>Tide</li>
+                        <li>Surf Excel</li>
+                    </ul>
+                </dd>
+            </dl>
+        </form>
+    </section>
 
-	<form action="about.html">
-		<h1>Grocery Item</h1>
-		<ol>
-		<dt><li>Atta</li></dt>
-		<dd>
-			<ul type="disc">
-				<li>Aashirwad chakki</li>
-				<li>Majisa brand</li>
-				<li>Fortune Chakki Fresh Atta</li>
-				<li>Shakti Bhog Atta</li>
-			</ul>
-		</dd>
-		<dt><li>Daal</li></dt>
-		<dd>
-			<ul type="disc">
-				<li>Moong daal</li>
-				<li>Urad daal</li>
-				<li>Masoor daal</li>
-				<li>Channa daal</li>			
-			</ul>
-		</dd>
-		<dt><li>Ghee</li></dt>
-		<dd>
-			<ul type="disc">
-				<li>Saras ghee</li>
-				<li>Dalda ghee</li>
-				<li>Gowardhan ghee</li>
-				<li>Amul ghee</li>
-			</ul>
-		</dd>
-		<dt><li>Ice cream</li></dt>
-		<dd>
-			<ul type="disc">
-				<li>Amul</li>
-				<li>Kwality wall's</li>
-				<li>kesar</li>
-				<li>choko bar</li>
-			</ul>
-		</dd>
-		<dt><li>Soap</li></dt>
-		<dd>
-			<ul type="disc">
-				<li>Lux soap</li>
-				<li>Lifebuoy</li>
-				<li>Hamaam</li>
-				<li>Neem soap</li>
-			</ul>
-		</dd>
-		<dt><li>Washing powder</li></dt>
-		<dd>
-			<ul type="disc">
-				<li>Nirma</li>
-				<li>Tide</li>
-				<li>Surf Excel</li>
-			</ul>
-		</dd>
-	</form>
+    <footer>
+        <p>&copy; 2024 Kiranawala. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>Follow us : 
+            <a href="https://www.facebook.com/tarrunverrma"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/vishwajeet_negi_/"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
 </body>
 </html>
