@@ -1,62 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KiranaWala | Login</title>
-	<style type="text/css">
-		body
-		{
-			/*background-image: url("kirana_backgroud.jpg");
-			background-repeat: no-repeat;*/
-			background-color: floralwhite;
-			font-size: 17px;
-		}
-		#submit
-		{
-			position: absolute;
-			top: 190px;
-		}
-		#reset
-		{
-			position: absolute;
-			top: 190px;
-			left: 70px;
-		}
-		a
-		{
-			color: black;
-			text-decoration: none;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KiranaWala | Login</title>
+    <style>
+        body {
+            background-color: floralwhite;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-	<link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            height: 50px;
+            width: 50px;
+        }
+
+        header a {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        nav {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin-bottom: 10px;
+            }
+
+            nav {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            table {
+                margin: 0;
+            }
+
+            input[type="submit"],
+            input[type="reset"] {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
 </head>
-<body style=" color: black;">
-	<img src="grocery-logo2.jpg" style="height:50px;width:50px">
-	<a href="index.html"> Kiranawala.com</a>
-	<hr>
-	<a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="today'spricelist.html">Today's price list</a> | <a href="register.html">Register</a> | <a href="#">login</a>
-	<hr>
-	<form action="index.html">
+<body>
+    <header>
+        <img src="grocery-logo2.jpg" alt="Kiranawala Logo">
+        <a href="index.html">Kiranawala.com</a>
+    </header>
 
-	<table>
-		<tr>
-			<td><label for="email">Email</label></td>
-			<td><input id="email" size="20" required placeholder="Enter your email" maxlength="20" type="text" name=""></td>
-		</tr>
-		<tr>
-			<td><label for="password" >Password</label> </td>
-			<td><input maxlength="8" size="20" placeholder="Enter password of 8 charset" id="password" required type="password" name=""></td>
-		</tr>
-	</table>
-	<label><input type="checkbox" > Save login details</label><br>
-	<input id="submit" type="submit" name="submit" value="Submit">
-	<input id="reset" type="reset" name="reset" value="reset"><br>
-		
-	</form>
-	<br>
-	Not registered user ? <a href="register.html">Register</a>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="today'spricelist.html">Today's Price List</a> |
+        <a href="register.html">Register</a> |
+        <a href="#">Login</a>
+    </nav>
 
+    <div class="container">
+        <form action="index.html">
+            <table>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input id="email" required placeholder="Enter your email" maxlength="50" type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input id="password" maxlength="8" placeholder="Enter password" type="password" name="password"></td>
+                </tr>
+            </table>
+            <label class="checkbox-group"><input type="checkbox"> Save login details</label><br>
+            <input id="submit" type="submit" name="submit" value="Submit">
+            <input id="reset" type="reset" name="reset" value="Reset"><br>
+        </form>
+        <p>Not registered? <a href="register.html">Register</a></p>
+    </div>
 </body>
 </html>

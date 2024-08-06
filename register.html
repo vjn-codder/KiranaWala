@@ -1,92 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KiranaWala | Register</title>
-	<style type="text/css">
-		body
-		{
-			background-color: floralwhite;
-			font-size: 17px;
-		}
-		a
-		{
-			color: black;
-			text-decoration: none;
-		}
-		div
-		{
-			position: absolute;
-			top: 80px;
-		}
-		table
-		{
-			margin-top: -40px;
-		}
-	</style>
-	<link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KiranaWala | Register</title>
+    <style>
+        body {
+            background-color: floralwhite;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            height: 50px;
+            width: 50px;
+        }
+
+        header a {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        nav {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin-bottom: 10px;
+            }
+
+            nav {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
 </head>
-<body style="color: black;">
-	<img src="grocery-logo2.jpg" style="height:50px;width:50px">
-	<b><a href="index.html"> Kiranawala.com</a></b>
-	<hr>
-	<a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="today'spricelist.html">Today's price list</a> | <a href="#">Register</a> | <a href="login.html">login</a>
-	<hr>
-	<table>
-	<form action="index.html">
-			<tr>
-				<td tabindex="1"><label for="name">Name </label> </td>
-				<td><input required placeholder="Enter your name" id="name" maxlength="20"type="text" name=""></td>
-			</tr>
-			<tr>
-				<td tabindex="2"><label for="email">Email</label></td>
-				<td><input id="email"type="email" required placeholder="Enter your email id" name=""></td>
-			</tr>
-			<tr>
-				<td tabindex="3"><label for="password">Password </label></td>
-				<td><input  maxlength="8" id="password" type="password" required placeholder="Enter your password" name=""></td>
-			</tr>
-			<tr>
-				<td tabindex="4"><label for="confirmed password">confirm password </label></td>
-				<td><input size="20" maxlength="8" id="confirmed password" type="confirmed password" required placeholder="Enter your confirm password" name=""></td>
-			</tr>
-			<tr>
-				<td tabindex="6">Gender</td>
-				<td>
-					<label><input id="male" type="radio" name="gender">Male</label>
-					<label><input id="female" type="radio" name="gender">Female</label><br>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2"><label for="country">country</label>
-					<select id="country">
-						<option selected>India</option>
-						<option>Pakistan</option>
-						<option>Russia</option>
-						<option>USA</option>
-				</td>
-			</tr>
-			<tr><td colspan="2"><label for="profile">profile photo</label>
-				<input type="file" id="profile" name=""></td><br>
-			</tr>
-			<tr>	
-				<td tabindex="7" colspan="2">recieve updates <label><input type="checkbox" > I accept all conditions</label></td>
-			</tr>
-			<tr>
-			<td tabindex="8"><label><input type="checkbox" > Save login details</label></tr></td><br>
-			<tr><td tabindex="9"><input type="submit" name="submit" value="Submit">
-				<input type="reset" name="reset" value="reset"></td>
-			</tr>		
-	</form>
-	</table>
-				already registered ? 
-				 <a href="login.html">login</a>
+<body>
+    <header>
+        <img src="grocery-logo2.jpg" alt="Kiranawala Logo">
+        <a href="index.html">Kiranawala.com</a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="today'spricelist.html">Today's Price List</a> |
+        <a href="#">Register</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="container">
+        <form action="index.html">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input required placeholder="Enter your name" id="name" maxlength="20" type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input id="email" type="email" required placeholder="Enter your email id" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input maxlength="8" id="password" type="password" required placeholder="Enter your password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password">Confirm Password</label></td>
+                    <td><input maxlength="8" id="confirm-password" type="password" required placeholder="Enter your confirm password" name="confirm-password"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <label><input id="male" type="radio" name="gender"> Male</label>
+                        <label><input id="female" type="radio" name="gender"> Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option selected>India</option>
+                            <option>Pakistan</option>
+                            <option>Russia</option>
+                            <option>USA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="checkbox-group">
+                        <label><input type="checkbox"> I accept all conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="checkbox-group">
+                        <label><input type="checkbox"> Save login details</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>Already registered? <a href="login.html">Login</a></p>
+    </div>
 </body>
 </html>
-	
-
-
-
-
-

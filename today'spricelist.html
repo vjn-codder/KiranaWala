@@ -1,156 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KiranaWala | Today's price list</title>
-	<style>
-			 table,td,th
-			{
-				border:solid 2px black;
-				border-collapse:collapse;
-				font-weight: 850;				
-			}
-			a
-			{ text-decoration: none;
-			}
-			table
-			{
-				height: 100px;
-				width: 600px;
-			}
-			th
-			{
-				font-size: 30px;
-				font-weight: 900;
-				text-align: left;
-			}
-			td
-			{
-				font-size: 20px;
-				font-weight: 500;
-				height: 5px;
-				width: 15px;
-			}
-			div
-			{
-				position: relative;
-				left: 25em;
-			}
-			body
-			{
-				/*background-image: url("kirana_backgroud.jpg");
-				background-repeat: no-repeat;*/
-				background-color: floralwhite;
-				font-size: 17px;
-			}
-			a
-			{
-				color: black;
-			}
-	</style>
-	<link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Kiranawala, your go-to grocery store.">
+    <meta name="keywords" content="grocery, contact, Kiranawala, store">
+    
+    <title>KiranaWala | Today's price</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: floralwhite;
+            color: #333;
+        }
+        header, nav, footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header {
+            background: #007bff;
+            color: white;
+        }
+        header img {
+            height: 50px;
+            width: 50px;
+            vertical-align: middle;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+        nav {
+            background: #0056b3;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            font-size: 1em;
+            font-weight: 900;
+        }
+        td {
+            font-size: 1em;
+            font-weight: 500;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            table {
+                width: 100%;
+            }
+            th, td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
-<body style="color: black;">
-	<img src="grocery-logo2.jpg" style="height:50px;width:50px" >
-	<b><a href="index.html"> Kiranawala.com</a></b>
-	<hr>
-	<a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="#">Today's price list</a> | <a href="register.html">Register</a> | <a href="login.html">login</a>
-	<hr>
-	<div>
-	<table>
-		<caption>Today's Price List</caption>
-		<tr>
-			<th>Sr no.</th>
-			<th>Item Name</th>
-			<th>Item image</th>
-			<th>Price</th>
-			<th>Discount</th>
-			<th>Final price</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>lux soap</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7nbZuCx1H8v4Ipu1pHqwHm_dxDyOsM0sHg&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>70</td>
-			<td>5%</td>
-			<td>85.5</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Tide</td>
-			<td>
-				<img src="https://m.media-amazon.com/images/I/71oGx-ZVpWL.jpg" style="height:60px;width:60px"></td>
-			<td>100</td>
-			<td>3%</td>
-			<td>97</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Ghee :Saras ghee</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UyhZhPNqes6cy2LFAVSLnxQC4WQmptB1rg&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>500</td>
-			<td>10%</td>
-			<td>450</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Aata: Aashirwad aata</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVPn3toWDXDHNFg_LxrNSCb0887NcKiOL4Q&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>500</td>
-			<td>0%</td>
-			<td>500</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>Neem soap</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBV5onM6Yp7zC8JYIrNpyiWyIz4tJ8olUqQ&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>80</td>
-			<td>10%</td>
-			<td>72</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>Dettol Handwash</td>
-			<td><img src="https://m.media-amazon.com/images/I/612bVvzKYwL._AC_UF1000,1000_QL80_.jpg" style="height:60px;width:60px"></td>
-			<td>110</td>
-			<td>18%</td>
-			<td>90.2</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>Garam Masala: MDH</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGO2eZ2HKDziGc3eYQtgMOUu4ZL9mVoMB5MN6jvHY_FKh6QhGNbN-E2hoqgF-AL3OGzng&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>500</td>
-			<td>500</td>
-			<td>500</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>Paneer: Amul</td>
-			<td><img src="https://www.bigbasket.com/media/uploads/p/l/40195258_1-amul-malai-paneer-sterlised.jpg" style="height:60px;width:60px"></td>
-			<td>95</td>
-			<td>5%</td>
-			<td>90.25</td>
-		</tr>
-		<tr>
-			<td>9</td>
-			<td>Aloo</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKvTcDT_AzGPiYDBV0dXu9XtkeA_QXCQqtQ&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>30</td>
-			<td>0%</td>
-			<td>30</td>
-		</tr>
-		<tr>
-			<td>10</td>
-			<td>Ice cream:family pack</td>
-			<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJa5Zc7vbP04PhdVXOjDStbsH9CHiEUGZ6A&usqp=CAU" style="height:60px;width:60px"></td>
-			<td>120</td>
-			<td>9%</td>
-			<td>109.2</td>
-		</tr>
+<body>
+    <header>
+        <img src="grocery-logo2.jpg" alt="Kiranawala Logo">
+        <a href="index.html">Kiranawala.com</a>
+    </header>
 
-	</table>
-	</div>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="#">Today's Price List</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <section class="content">
+        <table>
+            <caption style="caption-side: top; text-align: center; font-size: 1.5em; margin-bottom: 10px;">Today's Price List</caption>
+            <thead>
+                <tr>
+                    <th>Sr no.</th>
+                    <th>Item Name</th>
+                    <th>Item Image</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Final Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lux Soap</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7nbZuCx1H8v4Ipu1pHqwHm_dxDyOsM0sHg&usqp=CAU" style="height:60px;width:60px" alt="Lux Soap"></td>
+                    <td>70</td>
+                    <td>5%</td>
+                    <td>66.5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tide</td>
+                    <td><img src="https://m.media-amazon.com/images/I/71oGx-ZVpWL.jpg" style="height:60px;width:60px" alt="Tide"></td>
+                    <td>100</td>
+                    <td>3%</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Saras Ghee</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UyhZhPNqes6cy2LFAVSLnxQC4WQmptB1rg&usqp=CAU" style="height:60px;width:60px" alt="Saras Ghee"></td>
+                    <td>500</td>
+                    <td>10%</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Aashirwad Atta</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVPn3toWDXDHNFg_LxrNSCb0887NcKiOL4Q&usqp=CAU" style="height:60px;width:60px" alt="Aashirwad Atta"></td>
+                    <td>500</td>
+                    <td>0%</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Neem Soap</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBV5onM6Yp7zC8JYIrNpyiWyIz4tJ8olUqQ&usqp=CAU" style="height:60px;width:60px" alt="Neem Soap"></td>
+                    <td>80</td>
+                    <td>10%</td>
+                    <td>72</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Dettol Handwash</td>
+                    <td><img src="https://m.media-amazon.com/images/I/612bVvzKYwL._AC_UF1000,1000_QL80_.jpg" style="height:60px;width:60px" alt="Dettol Handwash"></td>
+                    <td>110</td>
+                    <td>18%</td>
+                    <td>90.2</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>MDH Garam Masala</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGO2eZ2HKDziGc3eYQtgMOUu4ZL9mVoMB5MN6jvHY_FKh6QhGNbN-E2hoqgF-AL3OGzng&usqp=CAU" style="height:60px;width:60px" alt="MDH Garam Masala"></td>
+                    <td>500</td>
+                    <td>0%</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Amul Paneer</td>
+                    <td><img src="https://www.bigbasket.com/media/uploads/p/l/40195258_1-amul-malai-paneer-sterlised.jpg" style="height:60px;width:60px" alt="Amul Paneer"></td>
+                    <td>95</td>
+                    <td>5%</td>
+                    <td>90.25</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Aloo</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKvTcDT_AzGPiYDBV0dXu9XtkeA_QXCQqtQ&usqp=CAU" style="height:60px;width:60px" alt="Aloo"></td>
+                    <td>30</td>
+                    <td>0%</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Family Pack Ice Cream</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJa5Zc7vbP04PhdVXOjDStbsH9CHiEUGZ6A&usqp=CAU" style="height:60px;width:60px" alt="Family Pack Ice Cream"></td>
+                    <td>120</td>
+                    <td>9%</td>
+                    <td>109.2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kiranawala. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        <p>Follow us:
+           <a href="https://www.facebook.com/tarrunverrma"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.instagram.com/vishwajeet_negi_/"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
 </body>
 </html>

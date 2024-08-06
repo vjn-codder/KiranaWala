@@ -1,50 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>KiranaWala | About us</title>
-	<style type="text/css">
-		body
-		{
-			/*background-image: url("kirana_backgroud.jpg");
-			background-repeat: no-repeat;*/
-			background-color: floralwhite;
-			font-size: 17px;
-		}
-		a
-		{
-			color: black;
-			text-decoration: none;
-		}
-		p
-		{
-			margin-top: -10px;
-		}
-	</style>
-	<link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About page for Kiranawala, your go-to grocery store.">
+    <meta name="keywords" content="grocery, about us, Kiranawala, store">
+    <title>KiranaWala | About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="grocery-logo2.jpg"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: floralwhite;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 50px;
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+
+        nav {
+            background: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: left;
+            margin: 20px;
+            max-width: 800px;
+            flex: 1;
+        }
+
+        .content ul {
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .content ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-<body style="color: black;">
-	<img src="grocery-logo2	.jpg" style="height:50px;width:50px">
-	<b><a href="index.html"> Kiranawala.com</a></b>
-	<hr>
-	<a href="index.html">Home</a> | <a href="#">About Us</a> | <a href="contact.html">Contact</a> | <a href="today'spricelist.html">Today's price list</a> | <a href="register.html">Register</a> | <a href="login.html">login</a>
-	<hr>
-	<P style="background-color: ;">
-		<ul>
-			<li>Hi am owner of the shop.<br></li>
-			<li>My name is Vishu.<br></li>
-			<li>We have the all the items available in our shop which are shown in home page.<br></li>
-			<li>My shop succesfully completed 1 year.<br></li>
-			<li>We are giving offline delivery  services to customer which is in bikaner.<br></li>
-			<li>We are going to give provide online services soon.<br></li>
-			<li>we are giving best brand products to you.<br></li>
-			<li>All price are reasonable.<br></li>
-			<li>For any enquiry please contct us.<br></li>
-			<li>We provide items in fair price</br></li>
-		</ul>
-		All rights are reserverd by<br>
-		Vishwajeet Singh Negi &trade; and &copyVj
-	</P>
+<body>
+    <header>
+        <img src="grocery-logo2.jpg" alt="Kiranawala Logo">
+        <a href="index.html">Kiranawala.com</a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="#">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="today'spricelist.html">Today's Price List</a> |
+        <a href="register.html">Register</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <section class="content">
+        <h1>About Us</h1>
+        <ul>
+            <li>Hi, I am the owner of the shop.</li>
+            <li>My name is Vishwajeet.</li>
+            <li>We have all the items available in our shop as shown on the homepage.</li>
+            <li>My shop has successfully completed 1 year.</li>
+            <li>We provide offline delivery services to customers in Bikaner.</li>
+            <li>We will be providing online services soon.</li>
+            <li>We offer the best brand products to you.</li>
+            <li>All prices are reasonable.</li>
+            <li>For any inquiry, please contact us.</li>
+            <li>We provide items at a fair price.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kiranawala. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        <p>Follow us: 
+           <a href="https://www.facebook.com/tarrunverrma"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.instagram.com/vishwajeet_negi_/"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
 </body>
 </html>
